@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0" />
+    <title>Eyes Following Mouse and 3D Animation</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      header nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      header nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      header nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        width: 360px;
+        height: 360px;
+        position: relative;
+        margin-top: 20px;
+      }
+      canvas {
+        display: block;
+      }
+      .content {
+        /* text-align: center; */
+        margin-top: 20px;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="container" id="threejs-container"></div>
+    <div class="content">
+      <p>
+        Three.js is a popular JavaScript library used to create and display
+        animated 3D graphics in a web browser. It is built on top of WebGL,
+        which is a low-level graphics API that enables high-performance 2D and
+        3D rendering within web pages. Three.js abstracts much of the complexity
+        of WebGL, making it more accessible for developers to create
+        sophisticated 3D visualizations, games, and interactive applications
+        without needing to write extensive WebGL code.
+      </p>
+    </div>
+    <div class="container" id="threejs-animation-container"></div>
+    <div class="content">
+      <p>
+        Key Features of Three.js Ease of Use: Three.js provides a more
+        user-friendly interface compared to raw WebGL. <br> It includes many built-in
+        objects, materials, lights, and shaders, which simplifies the creation
+        of 3D scenes. <br> Cross-Platform: Since it runs in the browser, Three.js
+        works across multiple platforms, including desktops, tablets, and mobile
+        devices, as long as the device supports WebGL. <br> Extensive Documentation
+        and Examples: Three.js comes with comprehensive documentation and
+        numerous examples, which helps developers quickly learn and implement
+        its features. <br> Animations and Interactions: It supports animations,
+        including skeletal animations for characters and keyframe animations. <br>It
+        also facilitates user interactions such as mouse and touch events. Scene
+        Graph: Three.js uses a scene graph structure, allowing developers to
+        easily manage and manipulate objects within a 3D scene.
+      </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
